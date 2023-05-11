@@ -2,10 +2,10 @@ type Props = {
   movie: any;
 }
 
-const DEFAULT_PLACEHOLDER_IMAGE = process.env.DEFAULT_PLACEHOLDER_IMAGE;
+const REACT_APP_DEFAULT_PLACEHOLDER_IMAGE = process.env.REACT_APP_DEFAULT_PLACEHOLDER_IMAGE;
 
 const Movie = ({ movie }: Props) => {
-  const poster = movie.Poster === "N/A" ? DEFAULT_PLACEHOLDER_IMAGE : movie.Poster;
+  const poster = movie.Poster === "N/A" ? REACT_APP_DEFAULT_PLACEHOLDER_IMAGE : movie.Poster;
 
   return (
     <div className="movie">
